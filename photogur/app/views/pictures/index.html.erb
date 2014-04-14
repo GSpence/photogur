@@ -5,3 +5,10 @@
 
   	<% end %>
   </ul>
+
+  <h1>Photos Over A Month Old</h1>
+  	<ul>
+  		<%= @created_before.each do |picture| %>
+  			<li><%= picture.title %></li>
+  		<% end %>
+  	</ul>
