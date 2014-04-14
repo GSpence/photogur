@@ -2,7 +2,9 @@
 
 
 		def index
-			@pictures = Picture.all
+      @pictures = Picture.all
+      @most_recent_pictures = Picture.most_recent_five
+      @created_before
 		end
 
 
